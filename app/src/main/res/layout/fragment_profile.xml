@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="30dp"
+    android:paddingEnd="30dp"
+    android:fitsSystemWindows="true"
+    tools:context=".fragment.ProfileFragment">
+
+    <include
+        android:id="@+id/profile_head"
+        layout="@layout/profile_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include
+        android:id="@+id/user_info"
+        layout="@layout/profile_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_head" />
+
+    <include
+        android:id="@+id/projects"
+        layout="@layout/projects"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_info"
+        android:layout_marginTop="30dp" />
+
+</RelativeLayout>
